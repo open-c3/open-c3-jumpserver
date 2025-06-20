@@ -1,0 +1,19 @@
+[JumpServer]
+url = http://xxxx
+key_id =  xxxx-xxxx-xxxx-xxxx-xxxx
+secret = xxxxxxxxxnxxxxxxx
+node_id = xxxx-xxxx-xxxx-xxxx-xxxx
+
+[CMDB]
+api_url = http://xxxx
+api_token = xxxxxxxxxnxxxxxxx
+
+[Templates]
+# 默认模板ID（当IP不在任何配置的网段内时使用）
+default_template_id = xxxx-xxxx-xxxx-xxxx-xxxx
+account_name = "accout_1"
+
+[Template_1]
+cidr = 10.16.0.0/16
+template_id = xxxx-xxxx-xxxx-xxxx-xxxx
+account_name = "accout_2"
