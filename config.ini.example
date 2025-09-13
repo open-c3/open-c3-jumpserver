@@ -1,19 +1,17 @@
 [JumpServer]
-url = http://xxxx
-key_id =  xxxx-xxxx-xxxx-xxxx-xxxx
-secret = xxxxxxxxxnxxxxxxx
-node_id = xxxx-xxxx-xxxx-xxxx-xxxx
+weburl = http://192.168.1.100
+key_id = ee74c13a-a556-5a28-b9e1-e71896e7e98a
+secret = FUUId0Dfcji1M5uoLKx7uWzzKHVQey1d2RXK
 
 [CMDB]
-api_url = http://xxxx
-api_token = xxxxxxxxxnxxxxxxx
+api_url = http://192.168.1.200
+api_key = 2481727108384729495110827462924629
 
 [Templates]
-# 默认模板ID（当IP不在任何配置的网段内时使用）
-default_template_id = xxxx-xxxx-xxxx-xxxx-xxxx
-account_name = "accout_1"
+template_id = 409274ce-67fb-4e5c-bed3-2a91534358d4
+account_name = c3-default
 
 [Template_1]
-cidr = 10.16.0.0/16
-template_id = xxxx-xxxx-xxxx-xxxx-xxxx
-account_name = "accout_2"
+cidr = 192.168.1.0/24
+template_id = c90f65cc-5b61-753d-a1e6-fc89763bd271
+account_name = 'work'
