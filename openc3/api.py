@@ -19,12 +19,12 @@ class OpenC3API(object):
         self.logger = logger
 
     def get_hosts(self):
-        """从CMDB API获取主机数据"""
+        """从OpenC3 API获取主机数据"""
         url = f"{self.base_url}/api/ci/c3mc/jumpserver"
         response = requests.get(url, headers=self.headers)
         if response.status_code == 200:
             data = response.json()
-            logger.info(f"Successfully fetched {len(data['data'] if 'data' in data else data)} hosts from CMDB")
+            logger.info(f"Successfully fetched {len(data['data'] if 'data' in data else data)} hosts from OpenC3")
             if not data.get("stat"):
                 raise RuntimeError("Open-C3 Service Error: stat false")
     
@@ -34,7 +34,7 @@ class OpenC3API(object):
             return data.get("data")
     
         else:
-            logger.error(f"Failed to fetch data from CMDB: {response.status_code}, {response.text}")
+            logger.error(f"Failed to fetch data from OpenC3: {response.status_code}, {response.text}")
             return []
 
     def get_users(self):
@@ -43,7 +43,7 @@ class OpenC3API(object):
            response = requests.get(url, headers=self.headers)
            if response.status_code == 200:
                data = response.json()
-               logger.info(f"Successfully fetched {len(data['data'] if 'data' in data else data)} user from CMDB")
+               logger.info(f"Successfully fetched {len(data['data'] if 'data' in data else data)} user from OpenC3")
                if not data.get("stat"):
                    raise RuntimeError("Open-C3 Service Error: stat false")
    
@@ -53,6 +53,6 @@ class OpenC3API(object):
                return data.get("data")
 
        except Exception as e:
-           logger.error(f"Error fetching data from CMDB: {str(e)}")
+           logger.error(f"Error fetching data from OpenC3: {str(e)}")
            return []
     

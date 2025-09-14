@@ -88,7 +88,7 @@ class JumpServerService(object):
 
     def get_platform_id(self, platform_name: str) -> Dict[str, Any]:
         """获取平台信息"""
-        # 映射CMDB平台名称到JumpServer平台名称和ID
+        # 映射OpenC3平台名称到JumpServer平台名称和ID
         platform_map = {
             'linux': {'id': 1, 'name': 'Linux'},
             'windows': {'id': 2, 'name': 'Windows'}, 

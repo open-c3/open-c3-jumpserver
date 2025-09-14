@@ -3,7 +3,7 @@ weburl = http://192.168.1.100
 key_id = ee74c13a-a556-5a28-b9e1-e71896e7e98a
 secret = FUUId0Dfcji1M5uoLKx7uWzzKHVQey1d2RXK
 
-[CMDB]
+[OpenC3]
 api_url = http://192.168.1.200
 api_key = 2481727108384729495110827462924629
 

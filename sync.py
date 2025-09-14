@@ -12,7 +12,7 @@ from utils import common
 
 def sync():
     jss = JumpServerService(JUMPSERVER_WEBURL, JUMPSERVER_KEY_ID, JUMPSERVER_SECRET)
-    c3s = OpenC3Service(CMDB_API_URL, CMDB_API_KEY)
+    c3s = OpenC3Service(OpenC3_API_URL, OpenC3_API_KEY)
 
     c3_trees = c3s.get_trees()
     c3_hosts = c3s.get_hosts()

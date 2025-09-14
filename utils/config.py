@@ -20,9 +20,9 @@ JUMPSERVER_WEBURL = config.get('JumpServer', 'weburl')
 JUMPSERVER_KEY_ID = config.get('JumpServer', 'key_id')
 JUMPSERVER_SECRET = config.get('JumpServer', 'secret')
 
-# CMDB API 配置
-CMDB_API_URL = config.get('CMDB', 'api_url')
-CMDB_API_KEY = config.get('CMDB', 'api_key')
+# OpenC3 API 配置
+OpenC3_API_URL = config.get('OpenC3', 'api_url')
+OpenC3_API_KEY = config.get('OpenC3', 'api_key')
 
 # 排除删除的IP列表
 EXCLUDED_IPS = config.get('Settings', 'excluded_ips', fallback='').split(',')
